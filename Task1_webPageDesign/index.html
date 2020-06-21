@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Control Panel</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<style>
+.img1 {
+	background-image: url("b.jpg");
+}
+
+.img2 {
+	background-image: url("black.jpg");
+	color: white;
+}
+
+body {
+
+	background-image: url("b.jpg");
+}
+
+.toRight {
+	position: absolute;
+	right: 130px;
+	top: 130px;
+}
+
+#m {
+	font-size: 22px;
+	font-family:verdana;
+	font-style: bold;
+	position: absolute;
+	top: 90px;
+	right: 190px;
+}
+
+#right {
+
+
+	position: absolute;
+	left: 286px;
+	top: 250px;
+
+
+}
+
+#left {
+
+
+	position: absolute;
+	left: 3px;
+	top: 250px;
+
+}
+
+#up {
+
+
+	position: absolute;
+	left: 185px;
+	top: 110px;
+
+}
+
+#down {
+
+
+	position: absolute;
+	left: 185px;
+	top: 400px;
+
+}
+
+#c {
+
+
+	position: absolute;
+	left: 160px;
+	top: 280px;
+
+}
+
+}
+</style>
+
+<body>
+	<p id="m" class="toRight" ;> </p>
+	<img id="image" class="toRight" src="robo.png">
+	<span id="left" onclick="myFunction()" style='font-size:200px;'>&#8606; </span>
+	<span id="up" onclick="myFunction2()" style='font-size:200px;'>&#8607; </span>
+	<span id="right" onclick="myFunction3()" style='font-size:200px;'>&#8608; </span>
+	<span id="down" onclick="myFunction4()" style='font-size:200px;'>&#8609; </span>
+	<span id="c" onclick="myFunc()" style='font-size:170px;'>&#9673; </span>
+
+
+	<button onclick="dark()">Change Mode</button>
+
+
+	<script>
+	function dark() {
+		var element = document.body;
+		element.classList.toggle("img2");
+	}
+	</script>
+
+	<script>
+	function myFun() {
+		document.getElementById("left").style.color = "black";
+		document.getElementById("up").style.color = "black";
+		document.getElementById("right").style.color = "black";
+		document.getElementById("down").style.color = "black";
+		document.getElementById("c").style.color = "red";
+		document.getElementById("image").src = "gearss.gif";
+
+
+
+	}
+
+	function myFunc() {
+		document.getElementById("left").style.color = "black";
+		document.getElementById("up").style.color = "black";
+		document.getElementById("right").style.color = "black";
+		document.getElementById("down").style.color = "black";
+		document.getElementById("c").style.color = "black";
+		document.getElementById("m").innerHTML = " ";
+		document.getElementById("image").src = "robo.png";
+
+
+	}
+	</script>
+
+
+	<script>
+	function myFunction() {
+		myFun();
+		document.getElementById("left").style.color = "green";
+		document.getElementById("m").innerHTML = "Moving to the left ";
+
+
+
+	}
+	</script>
+
+	<script>
+	function myFunction2() {
+		myFun();
+		document.getElementById("up").style.color = "green";
+		document.getElementById("m").innerHTML = "Moving forward";
+
+
+	}
+	</script>
+	<script>
+	function myFunction4() {
+		myFun();
+		document.getElementById("down").style.color = "green";
+		document.getElementById("m").innerHTML = "Moving backward ";
+
+
+	}
+	</script>
+	<script>
+	function myFunction3() {
+		myFun();
+		document.getElementById("right").style.color = "green";
+		document.getElementById("m").innerHTML = "Moving to the right ";
+
+
+	}
+	</script>
+</body>
+
+</html>
