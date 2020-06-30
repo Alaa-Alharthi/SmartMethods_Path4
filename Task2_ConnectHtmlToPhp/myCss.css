@@ -1,0 +1,32 @@
+<style>
+.img1 {
+	background-image: url("b.jpg");
+}
+
+.img2 {
+	background-image: url("black.jpg");
+	color: white;
+}
+.center {
+	text-align: center ;
+}
+.btn{
+margin = 25px;
+}
+.buttonRight {
+margin: 25px;
+class = "btn btn-secondary";
+}
+
+body {
+
+	background-image: url("b.jpg");
+}
+
+.toRight {
+	position: absolute;
+	right: 130px;
+	top: 130px;
+}
+
+<style>
